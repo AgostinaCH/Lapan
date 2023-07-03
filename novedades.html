@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+        </style>
+        <title>Pedidos</title>
+    </head>
+    <body>
+        <nav class="topnav">
+            <h1><a href="index.html" class="tittle">Lapan</a></h1>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="homemenu">
+                <div class="menu-left">
+                    <li><a href="./carta.html" class="menu-item">Carta</a></li>
+                    <li><a href="novedades.html" class="menu-item">Novedades</a></li>
+                    <li><a href="index.html" class="menu-item">Contacto</a></li>
+                </div>
+                <div class="menu-right">
+                    <li><a href="pedidos.html" class="menu-item">Pedir Online</a></li>
+                </div>
+            </div>
+        </nav>
+        <div class="responsive ">
+            <div class="home-responsive">
+                <li><a href="./carta.html" class="menu-resp">Carta</a></li>
+                <li><a href="novedades.html" class="menu-resp">Novedades</a></li>
+                <li><a href="index.html" class="menu-resp">Contacto</a></li>
+                <li><a href="pedidos.html" class="menu-resp">Pedir Online</a></li>
+            </div>
+        </div>
+        <h2 class="novedades-main">Últimas novedades</h2>
+        <article class="novedades-cont">
+            <div class="novedad-picnic">
+                <img src="img/novLapanerx.jpg" class="novedades-img">
+                <div class="contenedor-picnic">
+                    <h1>Picnic y Busqueda del tesoro Lapanerx</h1>
+                    <p>Nos encantan los picnics, la naturaleza y compartir. Por eso te proponemos un juego que seguramente jugaste alguna vez en tu infancia, solo que el tesoro es una MERIENDA PARA 2 personas.</p>
+                    <div class="novedades-news">
+                        <p>Bases del juego:</p>
+                        <ul>
+                            <li class="news-deco">Lapan elige un espacio natural donde instalar el picnic.</li>
+                            <li class="news-deco">Estar atentxs a nuestras historias que te darán las pistas para llegar a destino.</li>
+                            <li class="news-deco">Fichar la lona NARANJA Y BLANCA así identifican el picnic de Lapan.</li>
+                            <li class="news-deco">Los primerxs en llegar, son los ganadores del juego</li>
+                        </ul>
+                        <p>Como participar:</p>
+                        <ul><li>Sacar una foto de los jugadores, etiquetar a Lapan y listo 🤍(mostrarla cuando llegas a destino)</li></ul>
+                    </div>   
+                </div>
+            </div> 
+        </article>
+        <footer class="Footer">
+            <section class="footer-footer">
+                <div class="nav-footer">
+                    <p>Navegación</p>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                            <a href="carta.html">Carta</a>
+                            <a href="novedades.html">Novedades</a>
+                            <a href="index.html">Contacto</a>
+                            <a href="pedidos.html">Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="estrellas">
+                    <p>Puntuación</p>
+                    <img src="img/estrellas.png" class="stars-img">
+                </div>
+                <div class="redes">
+                    <p>Redes sociales</p>
+                    <a href="https://instagram.com/lapan_parana?igshid=MzRlODBiNWFlZA==">
+                        <img src="img/insta.png" class="insta-footer">
+                    </a>
+                </div>
+                <div class="comentario">
+                    <a href="formulario.html" class="coment-">Coméntanos tu experiencia</a>
+                </div>
+            </section>
+            <p class="footer-end">Lapan. Paraná, Entre Ríos, Argentina.</p>
+        </footer>
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const responsive = document.querySelector('.responsive')
+
+            toggleBtn.onclick = function() {
+                responsive.classList.toggle('open')
+                const isOpen = responsive.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
